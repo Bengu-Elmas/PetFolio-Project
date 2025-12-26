@@ -18,5 +18,5 @@ This repository contains the **frontend (HTML & CSS)** parts of the project that
 This repository represents my personal contribution to the PetFolio project.  
 Other parts of the project were developed by my teammates.
 
-##Live Demo
-https://bengu-elmas.github.io/PetFolio-Project/index.html
+## Live Demo
+🔗 https://bengu-elmas.github.io/PetFolio-Project/
