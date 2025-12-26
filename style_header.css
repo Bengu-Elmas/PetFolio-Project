@@ -9,16 +9,16 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 3px 40px;
-    font-family: 'Times New Roman', Times, serif;
-    flex-wrap: wrap;
-    gap: 40px;
+    padding: 10px 40px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    position: relative;   
 }
 
 .logo img {
-    height: clamp(60px, 12vw, 150px);
+    height: clamp(60px, 12vw, 110px);
     cursor: pointer;
 }
 
@@ -28,77 +28,86 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-left: auto;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    margin: 0; 
 }
 
 .icon {
-    height: 60px;
-    padding-right: 10px;
+    height: 46px; 
+    width: auto;
 }
 
 .nav-links a {
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    gap: 18px; 
     text-decoration: none;
-    text-align: right;
-    font-size: clamp(18px, 2.2vw, 30px);
+    font-size: clamp(18px, 2.3vw, 26px);
     font-weight: 800;
     color: black;
-    transition: transform 0.2s ease;
+    white-space: nowrap; 
+    transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #ff0037;
     transform: scale(1.05);
-    color: #ff0037
 }
 
 .bttn {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 8px;
     border: none;
     border-radius: 40px;
     cursor: pointer;
     background-color: #FFB8E0;
     color: #ffffff;
-    font-size: clamp(18px, 2.2vw, 30px);
-    padding: clamp(6px, 1vw, 10px) clamp(12px, 2vw, 15px);
+    font-size: clamp(16px, 2vw, 24px);
+    padding: clamp(8px, 1.2vw, 12px) clamp(16px, 2.5vw, 20px);
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
-    transition: transform 0.2s ease;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    margin-left: auto; 
 }
-
 .bttn:hover {
     text-decoration: underline;
     transform: scale(1.05);
     box-shadow: 0 4px 10px #EC7FA9;
     color: #ff0037;
 }
+
 .footer {
     background-color: #CD2C58;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 0 10px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     width: 100%;
     flex-wrap: wrap;
+    align-items: flex-start;
+    
 }
-
 .footer-left img {
-    height: clamp(60px, 12vw, 150px);
+    height: clamp(50px, 8vw, 100px);
+    
     cursor: pointer;
     margin: 0 auto;
     display: block;
 }
-
 .footer-left,
 .footer-right,
 .footer-legal {
@@ -107,7 +116,6 @@ body {
     min-width: 100px;
     text-align: center;
 }
-
 .footer-left h4 {
     font-weight: 600;
     font-size: 20px;
@@ -116,33 +124,29 @@ body {
     margin: 10px auto 0;
     text-align: center;
 }
-
-
 .footer-right h1,
 .footer-legal h1 {
     text-decoration: underline;
     margin-bottom: 10px;
+    font-size: 24px;
 }
-
 .footer-right h3:hover,
 .footer-legal li a:hover {
     text-decoration: underline;
     transform: scale(1.05);
     cursor: pointer;
 }
-
 .social-links {
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0 0;
 }
-
 .social-links a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     color: #ffffff;
     margin: 5px 0;
@@ -153,26 +157,26 @@ body {
     transform: scale(1.05);
     cursor: pointer;
 }
-
 .footer-legal ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .footer-legal li {
     margin-bottom: 5px;
 }
-
 .footer-legal li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
-
 .footer-bottom {
+    margin-top: 15px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid rgba(255,255,255,0.2); 
 }
