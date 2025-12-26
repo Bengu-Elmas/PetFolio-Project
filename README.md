@@ -8,6 +8,7 @@ This repository contains the **frontend (HTML & CSS)** parts of the project that
 - Home page design and layout
 - About Us page
 - Articles **main page** interface
+- Logo, navbar icons, and pet profile background illustration (original hand-drawn assets by me)
 
 ## Technologies Used
 - HTML5
