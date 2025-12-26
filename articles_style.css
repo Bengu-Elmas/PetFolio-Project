@@ -89,18 +89,21 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 1300px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+    gap: clamp(20px, 5vw, 60px);
 }
 
 .articles-main h1{
-    text-decoration: #cfcfcf;
-    font-size: 70px;
+    font-size: clamp(40px, 5vw, 70px);
     color: #3b3b3b;
+    margin: 0;
 }
 
 .articles-main img{
-    height: 500px;
+    width: clamp(200px, 30%, 500px);
+    height: auto;
+    object-fit: contain;
 }
 
 .articles-desc{
@@ -108,11 +111,13 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
-    gap: 60px;
-    font-size: 30px;
+    width: 90%;
+    margin: 40px auto 0;
+    gap: clamp(20px, 5vw, 60px);
+    font-size: clamp(18px, 2vw, 30px);
     text-align: center;
     font-weight: 500;
+    flex-wrap: wrap;
 }
 
 .card {
